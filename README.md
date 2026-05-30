@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wintage Naturals — Website
+
+Handcrafted artisan soap e-commerce site for **Wintage Naturals**, a home-based natural soap startup.
+
+## Design Inspiration
+
+The visual direction draws from 10 leading modern beauty & natural product brands:
+
+| Brand | What we borrowed |
+|-------|------------------|
+| **Lush** | Playful handmade personality, bold product storytelling |
+| **Glossier** | Clean whitespace, minimal navigation, soft UI |
+| **Aesop** | Refined serif typography, premium feel |
+| **Herbivore** | Soft earthy palette, botanical mood |
+| **Drunk Elephant** | Clear product cards with benefit tags |
+| **The Body Shop** | Ethical/natural messaging, trust signals |
+| **Tata Harper** | Organic luxury, ingredient transparency |
+| **Kiehl's** | Heritage storytelling sections |
+| **Fenty Beauty** | Strong hero with clear CTAs |
+| **Organic skincare templates** | Category-first navigation, conversion layout |
+
+## Pages
+
+| Route | Description |
+|-------|-------------|
+| `/` | Landing page — hero, categories, featured products, testimonials |
+| `/shop` | Full product catalog with category filters |
+| `/shop/[category]` | Category-specific product listing |
+| `/product/[slug]` | Product detail with ingredients & benefits |
+| `/cart` | Shopping cart with quantity controls |
+| `/checkout` | Delivery form + **COD payment** (UPI coming soon) |
+| `/order-success` | Order confirmation |
+| `/custom-order` | Custom soap request form |
+| `/about` | Brand story |
+| `/contact` | Contact form |
+
+## Tech Stack
+
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **Tailwind CSS v4**
+- **Lucide React** icons
+- Cart state persisted in `localStorage`
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+cd website
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy to Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push the `website` folder to GitHub
+2. Import the repo in [Vercel](https://vercel.com)
+3. Set root directory to `website`
+4. Deploy — no extra config needed
 
-## Learn More
+## Payment
 
-To learn more about Next.js, take a look at the following resources:
+- **COD (Cash on Delivery)** — fully functional checkout flow
+- **UPI** — UI placeholder marked "Coming Soon" for future integration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Future Enhancements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- UPI / Razorpay payment integration
+- Real product photography
+- Admin panel for order management
+- Email notifications on order placement
