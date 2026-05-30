@@ -2,6 +2,8 @@
 
 Handcrafted artisan soap e-commerce site for **Wintage Naturals**, a home-based natural soap startup.
 
+**Repository:** [github.com/kalanithib94/wintage-naturals](https://github.com/kalanithib94/wintage-naturals)
+
 ## Design Inspiration
 
 The visual direction draws from 10 leading modern beauty & natural product brands:
